@@ -53,14 +53,12 @@ body{
 
 :root{
 	--MenuDisplayPadding: 1.5vw;
-	--MenuDisplayWidth: calc(50vw - 4*var(--MenuDisplayPadding));
+	--MenuDisplayWidth: calc(30vw - 4*var(--MenuDisplayPadding));
 	--MenuDisplayHeight: 450px;
 
 }
 .menu-items-display-slide{
 	height: 500px;
-	width: 150%;
-	margin-left: -50%;
 	display: flex;
 	justify-content: space-around;
 }
@@ -73,11 +71,6 @@ body{
 	padding: var(--MenuDisplayPadding);
 	margin: var(--MenuDisplayPadding);
 }
-@keyframes menu-item-scroll{
-	from {translate: 0px;}
-	to {translate: calc(100% + 2*var(--MenuDisplayPadding));}
-}
-
 .menu-image-border{
 	height: calc(var(--MenuDisplayHeight)/3);
 	overflow: hidden;
