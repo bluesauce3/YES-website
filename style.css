@@ -1,0 +1,92 @@
+:root{
+	--red: #b5261e;
+	--white: #f6f6f6;
+	--dark-grey: #3d3d3b;
+}
+
+body{
+	background-color: var(--white);
+	margin: 0px;
+	font-family: Trebuchet MS, sans-serif;
+}
+.nav-bar{
+	background-color: var(--red);
+	height: 36px;
+	display: flex;
+}
+
+.nav-bar a{
+	margin-left: 3vw;
+	color: var(--white);
+	font-size: 3vh;
+	align-self: center;
+}
+
+.home-slide{
+	display: flex;
+	justify-content: space-around;
+}
+.home-slide-image-scroll{
+	position: absolute;
+	height: 365px;
+	width: 100%;
+	top: 36px;
+	overflow: hidden;
+}
+.home-slide-image-scroll img{
+	position: absolute;
+	z-index: -1;
+	opacity: 40%;
+	max-width: 100%;
+}
+
+.short-review{
+	font-size: 36px;
+	align-self: center;
+	text-align: center;
+}
+.sushi-zen-logo-L{
+}
+.description-slide p{
+	background-color: var(--white);
+}
+
+:root{
+	--MenuDisplayPadding: 1.5vw;
+	--MenuDisplayWidth: calc(50vw - 4*var(--MenuDisplayPadding));
+	--MenuDisplayHeight: 450px;
+
+}
+.menu-items-display-slide{
+	height: 500px;
+	width: 150%;
+	margin-left: -50%;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-item{
+	overflow: hidden;
+	height: var(--MenuDisplayHeight);
+	width: var(--MenuDisplayWidth);
+	display: inline-block;
+	outline: solid;
+	padding: var(--MenuDisplayPadding);
+	margin: var(--MenuDisplayPadding);
+}
+@keyframes menu-item-scroll{
+	from {translate: 0px;}
+	to {translate: calc(100% + 2*var(--MenuDisplayPadding));}
+}
+
+.menu-image-border{
+	height: calc(var(--MenuDisplayHeight)/3);
+	overflow: hidden;
+}
+.menu-image{
+	width: calc(var(--MenuDisplayWidth));
+}
+.menu-item-text{}
+h3.menu-item-text{}
+p.menu-item-text{}
+
+/* work on the scrolling animation for the menu items left to right. use css animations/transitions, flexbox order and js (obviously) */
